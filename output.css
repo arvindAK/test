@@ -1,0 +1,53 @@
+#path1 {
+  stroke-dasharray: 6518.28271484375;
+  stroke-dashoffset: 6518.28271484375;
+  animation: dash 3s ease-in-out alternate infinite;
+}
+
+#path2 {
+  stroke-dasharray: 6494.18701171875;
+  stroke-dashoffset: -6494.18701171875;
+  animation: dash2 3s ease-in-out alternate infinite;
+}
+
+@keyframes fills {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: transparent;
+  }
+  100% {
+    fill: blue;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 6518.28271484375;
+  }
+  10% {
+    stroke-dashoffset: 6500;
+  }
+  90% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash2 {
+  0% {
+    stroke-dashoffset: -6494.18701171875;
+  }
+  10% {
+    stroke-dashoffset: -6400;
+  }
+  90% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
